@@ -9,7 +9,7 @@
   },
   "name": "epic-engine",
   "description": "Pure TS engine developed by EpicPuppy613",
-  "version": "0.1.0-dev.0",
+  "version": "0.1.0-dev.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
