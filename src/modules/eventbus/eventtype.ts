@@ -1,3 +1,2 @@
-export interface EventType {
-    
+export class EventType {
 }

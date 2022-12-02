@@ -46,8 +46,8 @@ export class EventBus {
         if (event === undefined) throw new ReferenceError("Specified event ID does not exist");
         const handlers = this.handleTypes.get(event.type);
         if (handlers === undefined) return;
-        for (const id of handlers) {
-            const handler = this.handlers.get(id);
+        for (const handlerId of handlers) {
+            const handler = this.handlers.get(handlerId);
             if (handler === undefined) continue;
             handler.handle(event);
         }
