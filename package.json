@@ -14,10 +14,10 @@
   "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "jest --config jestconfig.json",
-    "build": "tsc",
+    "test": "npx jest --config jestconfig.json",
+    "build": "npx tsc",
     "prepare": "npm run build",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "npx tslint -p tsconfig.json",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "git add -A src",
