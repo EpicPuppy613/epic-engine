@@ -1,5 +1,5 @@
-import { Event } from "./event"
-import { EventHandler } from "./eventhandler";
+import { Event } from "./event.js"
+import { EventHandler } from "./eventhandler.js";
 
 export class EventBus {
     private events: Map<number, Event<any>>;

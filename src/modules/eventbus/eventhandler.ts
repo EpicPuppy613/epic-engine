@@ -1,5 +1,5 @@
-import { EventBus } from "./eventbus";
-import { EventType } from "./eventtype";
+import { EventBus } from "./eventbus.js";
+import { EventType } from "./eventtype.js";
 
 export class EventHandler<T extends EventType> {
     id: number;
