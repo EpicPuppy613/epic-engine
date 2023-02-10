@@ -11,4 +11,8 @@ export class Event<T extends EventType> {
         this.event = event;
         this.type = type;
     }
+
+    send (eventBus: EventBus): void {
+        eventBus.sendEvent(this.id);
+    }
 }
