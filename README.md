@@ -5,6 +5,11 @@ Pure JS engine developed by EpicPuppy613
 
 ## Changelog
 
+### 0.1.0
+
+- Remove SemVer
+- Stable enough for use
+
 ### 0.1.0-dev.7
 
 - Fix importing issue
