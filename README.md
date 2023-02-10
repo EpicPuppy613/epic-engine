@@ -5,7 +5,7 @@ Pure JS/TS game engine, Made by EpicPuppy613
 
 ## Changelog
 
-### 0.1.1
+### 0.1.1-dev.1
 
 - Add cleaning script to npm scripts
 - Update description
