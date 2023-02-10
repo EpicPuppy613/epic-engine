@@ -11,11 +11,11 @@ export class EventBus {
         this.events = new Map();
         this.handlers = new Map();
         this.handleTypes = new Map();
-        this.nextId = 1;
+        this.nextId = 0;
     }
 
     getNextId(): number {
-        return this.nextId++;
+        return ++this.nextId;
     }
 
     createEvent(event: Event<any>): void {
