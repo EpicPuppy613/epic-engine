@@ -1,7 +1,7 @@
 import { EventBus } from "./eventbus.js";
 import { EventType } from "./eventtype.js";
 
-export class Event<T extends EventType> {
+export class GameEvent<T extends EventType> {
     id: number;
     event: T;
     type: string;

@@ -14,7 +14,7 @@
   "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "jest",
     "build": "rm -rf ./lib/ && tsc",
     "prepare": "npm run build",
     "lint": "tslint -p tsconfig.json",

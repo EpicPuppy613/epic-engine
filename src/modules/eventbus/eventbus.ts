@@ -1,8 +1,8 @@
-import { Event } from "./event.js"
+import { GameEvent } from "./event.js"
 import { EventHandler } from "./eventhandler.js";
 
 export class EventBus {
-    private events: Map<number, Event<any>>;
+    private events: Map<number, GameEvent<any>>;
     private handlers: Map<number, EventHandler<any>>;
     private handleTypes: Map<string, number[]>;
     private nextId: number;
@@ -18,7 +18,7 @@ export class EventBus {
         return ++this.nextId;
     }
 
-    createEvent(event: Event<any>): void {
+    createEvent(event: GameEvent<any>): void {
         this.events.set(event.id, event);
     }
 
@@ -33,7 +33,7 @@ export class EventBus {
         }
     }
 
-    getEvent(id: number): Event<any> | undefined {
+    getEvent(id: number): GameEvent<any> | undefined {
         return this.events.get(id);
     }
 
